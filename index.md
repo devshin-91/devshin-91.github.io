@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog~~
+title: devshin-91의 블로그
 ---
 
