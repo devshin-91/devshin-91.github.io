@@ -1,0 +1,32 @@
+---
+title: "[삽질기]블로그 내 마크다운 표기 문제"
+date: 2023-12-30
+---
+
+# 1. 삽질 동기
+마크다운 에디터에서 표기되는 내용과 다르게 github 블로그에서 이상하게 표기되는 문제가 있었음. 
+
+# 2. 나타난 문제
+작성했던 '2023-12-29-[오름캠프]온보딩_2일차' 글에서 마크다운 문법을 이용한 글이 잘못 표기되는 문제가 있었다.
+
+* 마크다운 에디터에서는 코드 블록 내에서 백틱(`)을 그대로 표현하기 위해 백틱 앞에 역슬래쉬(\)를 써도 문제가 없이 잘 표기가 됐다.
+* 하지만 정작 블로그 글에서는 해당 부분에서 \가 표기되면서 그에 뒤따르는 텍스트가 마크다운 문법으로 인식 안 되고 다 평문으로 인식되는 문제가 있었다.
+
+# 3. 해결과정
+* 코드 블록 내에 백틱이 포함된 문장들을 들여쓰기 하니 굳이 역슬래쉬를 하지 않아도 백틱이 그대로 표기되었다. 
+* 다만 그 과정에서 표기된 코드 앞에 공란이 생기는 문제가 발생하긴 했다.
+* 하지만 이 부분까지 해결하기에는 시간소요를 생각해서 이와 관련하여 주의사항을 추가했다.
+
+# 4. 확인사항
+  1. 본 깃헙 블로그가 깃헙 블로그를 만들어주는 리포지터리를 클론하여 생성한 것이어서 리포지터리 자체 코드의 문제인 것인지 아니면 GitHub Flavored Markdown이 CommonMark Markdown과 상이함이 있어서 생긴 문제인지 확인이 필요하다.
+  2. 하지만 Github 블로그에서 A formal spec for GitHub Flavored Markdown에 대한 업데이트 내용이 있어서 오히려 본 리포지터리의 문제라고 생각된다.
+  3. 본 리포지터리의 오리지널 리포지터리의 README에 따르면 정적 사이트 생성기인 Jekyll을 사용하여 사이트를 생성한다고 한다.
+  4. Jekyll의 문서와 깃헙 문서를 참고해서 확인한 내용으로는 Jekyll을 이용해 만든 깃헙 페이지 사이트의 경우, 설정을 통해 Jekyll이 어떤 Markdown processor를 쓸지 결정할 수 있다. 다만 이 부분은 테스트가 필요할 수 있다.
+  5. Jekyll에서 기본으로 쓰는 Kramdown processor가 CommonMark Markdown와 syntax가 완벽히 호환되지 않는 점이 이번 문제의 핵심으로 보인다.
+
+# 5. 참고
+  1. https://commonmark.org/
+  2. https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/
+  3. https://github.com/skills/github-pages
+  4. https://jekyllrb.com/docs/configuration/markdown/
+  5. https://docs.github.com/en/enterprise-cloud@latest/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll
