@@ -47,7 +47,7 @@ date: 2024-01-07
  
     - 파이썬 노트북 생성 : 인터페이스 상단의 우측 -> New 버튼 -> Python 3 (ipykernel) 클릭
 
-      ![인터페이스 화면](https://devshin-91.github.io/fig/hard_work/jupyter_spyder/2.interface.jpg)
+      ![인터페이스 화면](https://devshin-91.github.io/fig/hard_work/jupyter_spyder/2.interface.JPG)
 
     1.4 키보드 단축키
 
@@ -83,11 +83,11 @@ date: 2024-01-07
 
     - Spyder 실행 : Anaconda prompt에서 `spyder`명령어 입력
 
-      ![Spyder 명령어](https://devshin-91.github.io/fig/hard_work/jupyter_spyder/4.spyder.jpg)
+      ![Spyder 명령어](https://devshin-91.github.io/fig/hard_work/jupyter_spyder/4.spyder.JPG)
     
-    - 인터페이스 확인 : 좌측 팔레트는 코드 창, 상단 우측 팔레트는 변수, Plot 확인, 디렉토리의 File 등 을 확인할 수 있는 정보창, 하단 우측 팔레트는 해당 가상환경이 쓰는 버전의 Ipython console 이다. 
+    - 인터페이스 확인 : 좌측 팔레트는 코드 창, 상단 우측 팔레트는 변수, Plot 확인, 디렉토리의 File 등 을 확인할 수 있는 정보창, 하단 우측 팔레트는 해당 가상환경이 쓰는 버전의 Ipython console 이다.
 
-      ![Spyder 인터페이스](https://devshin-91.github.io/fig/hard_work/jupyter_spyder/4.spyder_interface.jpg)
+      ![Spyder 인터페이스](https://devshin-91.github.io/fig/hard_work/jupyter_spyder/4.spyder_interface.JPG)
 
     2.3 폴더 경로 및 파이썬 파일 생성
 
