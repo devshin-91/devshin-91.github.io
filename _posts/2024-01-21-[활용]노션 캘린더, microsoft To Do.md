@@ -1,5 +1,5 @@
 ---
-title: "[활용기]Notion Calendar, Microsoft To Do"
+title: "[활용]노션 캘린더, microsoft To Do"
 date: 2024-01-21
 ---
 
