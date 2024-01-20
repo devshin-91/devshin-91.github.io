@@ -1,2 +1,8 @@
 theme: minima
-future: false
+timezone: Asia/Seoul # 특정 timezone 설정 -> 표준 시간대보다 빠르더라도 설정한 timezone 기준으로 글을 보여줌. 
+                     # 본인이 글을 업로드하는 나라가 바뀔 경우, 그 나라에 맞게 timezone을 다시 설정하는 게 좋음.
+                     # timezone은 IANA에서 관리하는 timezone을 명시
+
+# future: false # 기본값은 false
+                # 기본적으로 표준 시간보다 더 빠른 한국에서 새벽에 글을 업로드하면 해당글은 미래 시간의 글이여서 블로그에 안 올라옴
+                # 하지만 future: true를 넣어주면 해당 글이 블로그에서 나오게 해줌. 
