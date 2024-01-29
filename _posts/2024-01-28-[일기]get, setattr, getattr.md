@@ -9,7 +9,7 @@ date: 2024-01-28
 # 2. 내용
 1. get
 
-    - get은 수업시간에 어떤 값을 가져올 때 쓰거나 딕셔너리에서 키를 조회하여 값을 가져오거나 값이 없다면 예외처리로 활용이 가능했다.
+    - get은 수업시간에 어떤 값을 가져올 때 쓰거나 딕셔너리에서 키를 조회하여 값을 가져오거나 키가 없다면 예외처리로 활용이 가능했다.
 
     - 딕셔너리의 키와 get을 통한 정렬
 
@@ -70,21 +70,21 @@ date: 2024-01-28
     - 이럴 떄는 mod = sys.modules[__name__] 을 활용해 반복문에서 매번 새로운 변수 이름을 생성할 수 있다.
     - 예를 들어 var1 = '내용 1', var2 = '내용 2', var3 = '내용 3' 이런 식으로 만드는 것이다.
 
-    ```python
-    import sys
-    import random
-    mod = sys.modules[__name__]
-    for i in range(5):
-        setattr(mod, f'var{i+1}', i+1)
-    ```
+        ```python
+        import sys
+        import random
+        mod = sys.modules[__name__]
+        for i in range(5):
+            setattr(mod, f'var{i+1}', i+1)
+        ```
 
 3. getattr
     - 생성한 변수를 불러와서 활용하는 함수다. 
     
-    ```python
-    for i in range(5):
-        print(getattr(mod, f'var{i+1}'))
-    ```
+        ```python
+        for i in range(5):
+            print(getattr(mod, f'var{i+1}'))
+        ```
 
 # 3. 참고
 1. https://100.pyalgo.co.kr/?page=12#
